@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f3ed;
+  color: #2f241f;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: #4b1f26;
+  color: white;
+}
+
+header h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.glas{
+  width: 80px;
+  height: 80px;
+  border: 3px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.hero {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 60px 8%;
+  background: linear-gradient(90deg, #eadfce, #f7f3ed);
+}
+
+.hero div {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.main-btn,
+button {
+  background: #7b2937;
+  color: white;
+  border: none;
+  padding: 11px 18px;
+  text-decoration: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.wines {
+  padding: 55px 8%;
+  text-align: center;
+}
+
+.wine-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 240px;
+  background: white;
+  padding: 25px;
+  border: 1px solid #ddd3c7;
+  border-radius: 8px;
+}
+
+.bottle {
+  font-size: 60px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #70645d;
+}
+
+.card b {
+  display: block;
+  margin: 15px 0;
+}
+
+.message {
+  margin-top: 25px;
+  color: #7b2937;
+}
+
+.about {
+  padding: 50px 8%;
+  background: #eadfce;
+  text-align: center;
+}
+
+.about p {
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #4b1f26;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
